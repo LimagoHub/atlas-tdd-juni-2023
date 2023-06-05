@@ -5,6 +5,9 @@
 #include "StapelTest.h"
 
 namespace collections {
+
+    const int expectedSize = 10;
+
     TEST_F(StapelTest, is_empty__empty_stack__returnsTrue) {
         // Arrange
 
@@ -27,17 +30,13 @@ namespace collections {
     }
     TEST_F(StapelTest, push__fill_up_to_limit__noExceptionIsThrown) {
         // Arrange + Act + Assert
-        for (int i = 0; i < 10; ++i) {
-            EXPECT_NO_THROW(objectUnderTest.push(1));
-        }
+        fill_up_to_limit_without_exception();
 
     }
 
     TEST_F(StapelTest, push__overflow__throwsStapelException) {
         // Arrange + Act
-        for (int i = 0; i < 10; ++i) {
-            EXPECT_NO_THROW(objectUnderTest.push(1));
-        }
+
         EXPECT_THROW(objectUnderTest.push(1), StapelException);
 
     }
@@ -46,9 +45,7 @@ namespace collections {
 
         try {
             // Arrange + Act
-            for (int i = 0; i < 10; ++i) {
-                EXPECT_NO_THROW(objectUnderTest.push(1));
-            }
+            fill_up_to_limit_without_exception();
             objectUnderTest.push(1);
             FAIL() << "Exception erwartet";
         } catch (const StapelException &ex) {
@@ -59,6 +56,9 @@ namespace collections {
     }
 
 
-
-
+    void StapelTest::fill_up_to_limit_without_exception() {
+        for (int i = 0; i < expectedSize; ++i) {
+            EXPECT_NO_THROW(objectUnderTest.push(1));
+        }
+    }
 } // collections

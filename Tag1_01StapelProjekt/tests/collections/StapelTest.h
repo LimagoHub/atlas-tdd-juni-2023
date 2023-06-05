@@ -13,6 +13,10 @@ namespace collections {
     class StapelTest: public Test {
     protected:
         Stapel objectUnderTest;
+
+        void fill_up_to_limit_without_exception();
     };
+
+
 
 } // collections
