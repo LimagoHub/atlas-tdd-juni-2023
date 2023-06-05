@@ -5,6 +5,7 @@
 #pragma once
 #include "gtest/gtest.h"
 #include "../../source/collections/Stapel.h"
+#include "../../source/collections/StapelException.h"
 using namespace testing;
 
 namespace collections {

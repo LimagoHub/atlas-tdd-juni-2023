@@ -6,10 +6,11 @@
 
 namespace collections {
     class Stapel {
-        int data[10];
-        int index;
+
+
 
     public:
+        static constexpr int size{10};
         Stapel();
 
         ~Stapel() = default;
@@ -21,6 +22,9 @@ namespace collections {
 
         bool is_empty()  const;
         bool is_full() const;
+    private:
+        int data[Stapel::size];
+        int index;
 
     };
 }

@@ -7,12 +7,13 @@
 
 collections::Stapel::Stapel():index{0} {}
 
+
 bool collections::Stapel::is_empty() const {
     return index == 0;
 }
 
 bool collections::Stapel::is_full() const {
-    return index == 10;
+    return index == Stapel::size;
 }
 
 void collections::Stapel::push(int value) {
