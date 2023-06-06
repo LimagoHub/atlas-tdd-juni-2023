@@ -6,7 +6,7 @@
 class Schwein
 {
 	std::string name;
-	int gewicht;
+	int gewicht{10};
 
     void setGewicht(int gewicht_) {
         Schwein::gewicht = gewicht_;
