@@ -24,4 +24,9 @@ public:
             dependency_.foobar("Hello Welt") << std::endl;
         return dependency_.foobar(value) + 5;
     }
+
+    long h() {
+        //auto value = dependency_.bar();
+        return dependency_.bar() * dependency_.bar();
+    }
 };

@@ -22,7 +22,7 @@ TEST_F(MyDependencyUsingDependencyTest, f_Upper) {
 
     // Recordmode
     EXPECT_CALL(dependencyMock,foo("HALLO"));
-
+    // Replaymode
 
     objectUnderTest.f("hallo");
 
@@ -37,4 +37,12 @@ TEST_F(MyDependencyUsingDependencyTest, f_Murks) {
 
     auto result = objectUnderTest.g("Hallo");
     EXPECT_THAT(result, 105);
+}
+TEST_F(MyDependencyUsingDependencyTest, h_demo) {
+
+    // Recordmode
+    EXPECT_CALL(dependencyMock,bar).Times(AtLeast(1)).WillRepeatedly(Return(100));
+
+    auto result = objectUnderTest.h();
+    EXPECT_THAT(result, 10000);
 }

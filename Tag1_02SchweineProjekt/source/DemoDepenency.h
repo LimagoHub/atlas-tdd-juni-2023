@@ -15,7 +15,7 @@ public:
         return 0;
     }
 
-    int foobar(std::string message) const override {
+    size_t foobar(std::string message) const override {
         return 0;
     }
 };
