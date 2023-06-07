@@ -34,6 +34,8 @@
     <list default="true" id="6b3bbc18-b5fb-411b-bc8f-a8d64548d556" name="Changes" comment="Uebung">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presenter/euro_to_dollar_presenter_impl.h" beforeDir="false" afterPath="$PROJECT_DIR$/presenter/euro_to_dollar_presenter_impl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/presenter/euro_to_dollar_presenter_impl_test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/presenter/euro_to_dollar_presenter_impl_test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/presenter/euro_to_dollar_presenter_impl_test.h" beforeDir="false" afterPath="$PROJECT_DIR$/tests/presenter/euro_to_dollar_presenter_impl_test.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,32 +76,32 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="CMake Application.Euro2Dollar">
+  <component name="RunManager" selected="Google Test.euro_to_dollar_presenter_impl_test">
     <configuration name="euro_to_dollar_presenter_impl_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__HappyDay__result_in_dollar_field" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__HappyDay__result_in_dollar_field" TEST_MODE="SUITE_TEST">
+    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__Number_followed_by_string__InEuroField__error_message_in_dollar_field" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__Number_followed_by_string__InEuroField__error_message_in_dollar_field" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__validEuro__parameter_passed_to_service" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__validEuro__parameter_passed_to_service" TEST_MODE="SUITE_TEST">
+    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__empty_string__InEuroField__error_message_in_dollar_field" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__empty_string__InEuroField__error_message_in_dollar_field" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NANInEuroField__rechnen_disabled" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="update_rechnen_action_state__NANInEuroField__rechnen_disabled" TEST_MODE="SUITE_TEST">
+    <configuration name="euro_to_dollar_presenter_impl_test.rechnen__happyDay__dollar_value_in_dollar_field" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="rechnen__happyDay__dollar_value_in_dollar_field" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="euro_to_dollar_presenter_impl_test.update_rechnen_action_state__validNumberInEuroField__rechnen_enabled" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" CONFIG_NAME="Debug-MinGW" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="update_rechnen_action_state__validNumberInEuroField__rechnen_enabled" TEST_MODE="SUITE_TEST">
+    <configuration name="euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NANInEuroField__rechnen_action_disabled" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Euro2Dollar" TARGET_NAME="Euro2DollarTest" RUN_TARGET_PROJECT_NAME="Euro2Dollar" RUN_TARGET_NAME="Euro2DollarTest" TEST_CLASS="euro_to_dollar_presenter_impl_test" TEST_METHOD="update_rechnen_action_state__NANInEuroField__rechnen_action_disabled" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -118,19 +120,19 @@
     <list>
       <item itemvalue="CMake Application.Euro2Dollar" />
       <item itemvalue="CMake Application.Euro2DollarTest" />
+      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__Number_followed_by_string__InEuroField__error_message_in_dollar_field" />
+      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__empty_string__InEuroField__error_message_in_dollar_field" />
+      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__happyDay__dollar_value_in_dollar_field" />
+      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NANInEuroField__rechnen_action_disabled" />
       <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test" />
-      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__HappyDay__result_in_dollar_field" />
-      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__validEuro__parameter_passed_to_service" />
-      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__validNumberInEuroField__rechnen_enabled" />
-      <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NANInEuroField__rechnen_disabled" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test" />
-        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__validNumberInEuroField__rechnen_enabled" />
-        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NANInEuroField__rechnen_disabled" />
-        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__HappyDay__result_in_dollar_field" />
-        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__validEuro__parameter_passed_to_service" />
+        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__empty_string__InEuroField__error_message_in_dollar_field" />
+        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__Number_followed_by_string__InEuroField__error_message_in_dollar_field" />
+        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.update_rechnen_action_state__NANInEuroField__rechnen_action_disabled" />
+        <item itemvalue="Google Test.euro_to_dollar_presenter_impl_test.rechnen__happyDay__dollar_value_in_dollar_field" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +167,7 @@
       <workItem from="1686118792863" duration="197000" />
       <workItem from="1686119943080" duration="39000" />
       <workItem from="1686120000056" duration="749000" />
-      <workItem from="1686131665863" duration="902000" />
+      <workItem from="1686131665863" duration="9227000" />
     </task>
     <task id="LOCAL-00001" summary="Letzter Stand">
       <created>1654017415364</created>
