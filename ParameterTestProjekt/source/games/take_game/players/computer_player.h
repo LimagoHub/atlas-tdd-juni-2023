@@ -7,6 +7,14 @@
 #include "../io/Writer.h"
 
 class computer_player {
+    /*
+     * Äquivalentklasse
+     *
+     * 1 Menge der durch vier teilbaren zahlen
+     * 2 Menge der durch vier teilbaren zahlen mit Rest 1
+     * 3 Menge der durch vier teilbaren zahlen mit Rest 2
+     * 4 Menge der durch vier teilbaren zahlen mit Rest 3
+     */
 
     Writer &writer;
 public:

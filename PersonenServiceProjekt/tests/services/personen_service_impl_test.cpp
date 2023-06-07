@@ -52,7 +52,7 @@ TEST_F(personen_service_impl_test, speichern__unexpected_exception_in_underlying
 TEST_F(personen_service_impl_test, speichern__unexpected_exception_in_underlying_repo_service__throws_personen_service_exception){
     try {
         person validPerson{};
-        ON_CALL(blacklistMock, is_blacklisted(_)).WillByDefault(Return(false));
+
         EXPECT_CALL(repoMock, save_or_update(_)).WillOnce(Throw(std::out_of_range{"Upps"}));
         object_under_test.speichern(validPerson);
         FAIL() << "Exception erwartet";
@@ -72,4 +72,22 @@ TEST_F(personen_service_impl_test, speichern__HappyDay__person_passed_to_repo){
 
         object_under_test.speichern(validPerson);
 
+}
+
+TEST_F(personen_service_impl_test, speichern_overloaded__HappyDay__person_passed_to_repo){
+
+
+    person captured_person{};
+    EXPECT_CALL(blacklistMock, is_blacklisted(_)).WillOnce(Return(false));
+    EXPECT_CALL(repoMock, save_or_update(_)).WillOnce(DoAll(SaveArg<0>(&captured_person)));
+
+    object_under_test.speichern("Max","Mustermann");
+    EXPECT_THAT( captured_person.getVorname(), AnyOf(StartsWith("J"), StartsWith("M")));
+    EXPECT_THAT(captured_person.getNachname(), AnyOf(Eq("Doe"), Eq("Mustermann")));
+    EXPECT_THAT(captured_person.getId(), Not(IsEmpty()));
+
+}
+
+void personen_service_impl_test::SetUp() {
+    ON_CALL(blacklistMock, is_blacklisted(_)).WillByDefault(Return(false));
 }

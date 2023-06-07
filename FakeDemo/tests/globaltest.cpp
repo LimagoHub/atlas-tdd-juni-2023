@@ -9,7 +9,7 @@
 class Foo {
 public:
     void bar() {
-        std::cout << mult(7,8.2) << std::endl;
+        std::cout << mult(7,8.0) << std::endl;
     }
 };
 

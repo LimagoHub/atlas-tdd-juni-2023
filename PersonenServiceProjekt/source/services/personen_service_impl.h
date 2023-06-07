@@ -34,6 +34,12 @@ public:
 
     }
 
+    void speichern(std::string vorname, std::string nachname) {
+        person p{vorname, nachname};
+        p.setId("UUID");
+        speichern(p);
+    }
+
 
 
 
@@ -44,9 +50,9 @@ private:
     }
 
     void check_person(const person &person_) const {
-        business_check(person_);
-        validate_person(person_);
 
+        validate_person(person_);
+        business_check(person_);
     }
 
     void business_check(const person &person_) const {

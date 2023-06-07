@@ -18,4 +18,5 @@ protected:
     NiceMock<MockBlacklistService> blacklistMock;
     personen_service_impl object_under_test{repoMock, blacklistMock};
 
+    void SetUp() override;
 };
