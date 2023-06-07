@@ -31,9 +31,7 @@ public:
 
 	void populate_items() const override
 	{
-        view_->set_euro("5");
-        view_->set_dollar("0");
-        view_->set_rechnen_enabled(true);
+
 	}
 
     //Euro string aus view lesen
@@ -46,27 +44,14 @@ public:
     */
 	void rechnen() const override
 	{
-        try {
-            auto result = model_->convert(std::stod(view_->get_euro()));
-            std::stringstream ss;
 
-            ss << std::fixed;
-            ss.precision(2);
-            ss << result;
-            view_->set_dollar(ss.str());
-
-        } catch (const std::invalid_argument &ex) {
-            view_->set_dollar("Keine Zahl");
-        } catch (const std::exception &ex) {
-            view_->set_dollar("Ein Fehler ist aufgetreten");
-        }
 
 
 	}
 
 	void beenden() const override
 	{
-        view_->dispose();
+
 	}
 
     /*
@@ -76,12 +61,7 @@ public:
      */
 	void update_rechnen_action_state() const override
 	{
-        try {
-            std::stod(view_->get_euro());
-            view_->set_rechnen_enabled(true);
-        } catch (const std::invalid_argument &ex) {
-            view_->set_rechnen_enabled(false);
-        }
+        
 
 	}
 };
